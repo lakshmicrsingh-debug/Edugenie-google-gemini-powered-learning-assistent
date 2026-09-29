@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(920px, 92%); margin: 0 auto; padding: 42px 0; }
+.hero { padding: 10px 4px 26px; }
+.brand { font-weight: 800; letter-spacing: .04em; color: #4f46e5; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.05; margin: 10px 0 14px; }
+.hero p { max-width: 700px; color: #5d687c; font-size: 1.05rem; }
+.card { background: #fff; border: 1px solid #e5e9f2; border-radius: 18px; padding: 24px; margin-top: 18px; box-shadow: 0 8px 30px rgba(20, 31, 55, .06); }
+label { display: block; font-weight: 700; margin: 0 0 8px; }
+select, textarea, input { width: 100%; border: 1px solid #d8deea; border-radius: 12px; padding: 13px 14px; font: inherit; background: #fff; margin-bottom: 18px; }
+textarea { resize: vertical; min-height: 160px; }
+select:focus, textarea:focus, input:focus { outline: 3px solid rgba(79, 70, 229, .12); border-color: #6366f1; }
+button { border: 0; border-radius: 12px; padding: 13px 20px; font-weight: 750; cursor: pointer; background: #4f46e5; color: white; }
+button:disabled { opacity: .6; cursor: wait; }
+.secondary { background: #eef0ff; color: #4338ca; padding: 9px 14px; }
+.dynamic { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.result-heading { display: flex; justify-content: space-between; align-items: center; }
+.result-heading h2 { margin-top: 0; }
+.result { line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+.result.empty { color: #8a94a6; }
+.quiz-question { padding: 18px 0; border-top: 1px solid #edf0f5; }
+.quiz-question:first-child { border-top: 0; }
+.quiz-question h3 { margin-top: 0; }
+.quiz-option { display: block; padding: 10px 12px; background: #f7f8fc; border-radius: 10px; margin: 8px 0; }
+.quiz-answer { margin-top: 10px; color: #334155; }
+.status { min-height: 24px; margin-top: 12px; color: #596579; }
+.status.error { color: #b42318; }
+footer { text-align: center; color: #7b8495; padding: 28px 0; font-size: .9rem; }
+@media (max-width: 650px) { .container { padding-top: 24px; } .card { padding: 18px; } .dynamic { grid-template-columns: 1fr; gap: 0; } }
